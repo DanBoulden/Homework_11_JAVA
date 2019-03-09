@@ -26,7 +26,7 @@ var tbody = d3.select("tbody");
 //   if (count.datetime == dateAsk) {
 //     requestedRecord.push(data[i]);
 //   }
-//   else {}
+//   else {} 
 // // console.log(data.datetime);
 // }
 
