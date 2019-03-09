@@ -5,23 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Forms</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <title>Search for an Encounter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
+  <!-- <link rel="stylesheet" type="static/css" href="style.css"> -->
 </head>
 
+<style>
+  { margin: 0; padding: 0; }
+    html {
+            background: url("static/images/nasa.jpg") no-repeat center center fixed; 
+            background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+          } 
+  th {padding-left: 10pt;
+      padding-right: 10pt;
+    }
+  tbody {padding-left: 10pt;
+      padding-right: 10pt;
+    }
+
+  td {padding-left: 10pt;
+      padding-right: 10pt;
+    }
+
+    ufo {
+size: 30pt;
+    }
+
+</style>
+
+<!-- ufo.svg -->
+
 <body>
+    <header>
+        <h1>Search for UFO Sightings for a given date <img class="ufo" src="static/images/ufo.svg" width="20" height="30" alt="Computer Hope"></h1>
+      </header>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <form>
           <div class="form-group">
-            <label for="patient-form">Search for UFO Sightings from a given date</label>
+            <!-- <label for="patient-form">Search for UFO Sightings for a given date</label> -->
             <br>
             <button class="btn btn-default" href="index.html">Click here to reset the table</button>
             <input class="form-control" id="datetime" name="patient-form" type="text" placeholder="1/11/2010">
           </div>
+          <h2>Enter a date above and click submit</h2>
+          <h5>Each time you search we will append your results, click reset to reset the table</h5>
           <button id="submit" type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
